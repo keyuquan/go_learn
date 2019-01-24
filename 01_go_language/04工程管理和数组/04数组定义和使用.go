@@ -9,7 +9,8 @@ func main0401() {
 	//数组定义和使用
 	//var 数组名 [元素个数]数据类型
 	//var arr [10]int
-	//
+	// java  : int intArray[] = new int[5];
+
 	////数组名[下标]=值
 	//
 	//arr[0]=123
@@ -17,6 +18,8 @@ func main0401() {
 
 	//数组下标是从0开始的  到数组下标的最大值为数组元素个数-1
 	var arr [10]int = [10]int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+
+	// java : int arrayDemo[] = {1, 2, 4, 7, 9, 192, 100};
 
 	//fmt.Println(arr[0])
 	//fmt.Println(arr[1])
