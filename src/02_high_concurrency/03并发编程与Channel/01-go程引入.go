@@ -23,6 +23,6 @@ func main() {
 	go dance()
 
 	for {
-
+		fmt.Println("")
 	}
 }
