@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"runtime"
+	"time"
 )
 
 func test() {
@@ -21,6 +22,6 @@ func main() {
 	}()
 
 	for {
-
+		time.Sleep(100 * time.Millisecond)
 	}
 }
