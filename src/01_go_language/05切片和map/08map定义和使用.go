@@ -25,11 +25,12 @@ func main() {
 	//重新赋值
 	m["尼古拉斯赵四"] = 10
 	//可以通过验证key对应的value是否有值  根据条件作出相应操作
-	_, ok := m["尼古拉斯赵四"]
+	num, ok := m["尼古拉斯赵四"]
 	if ok {
-		fmt.Println("该key以存在")
-	} else {
+		fmt.Println("该key以存在", num)
 		m["尼古拉斯赵四"] = 20
+	} else {
+		m["尼古拉斯赵四"] = 30
 	}
 	//map中key和value不能翻过来操作
 	//m[10]="布莱恩特王老七"//err
