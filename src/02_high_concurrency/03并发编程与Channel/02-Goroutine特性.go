@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-
+	// 主go程结束，子go程随之退出。
 	go func() { // 创建一个 子go 程
 		for i := 0; i < 5; i++ {
 			fmt.Println("------I'm goroutine -------")
