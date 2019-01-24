@@ -18,9 +18,9 @@ func main() {
 			nowTime := <-myTicker.C
 			i++
 			fmt.Println("nowTime:", nowTime)
-			if i == 3 {
-				quit <- true // 解除 主go程阻塞。
-				break        // return // runtime.Goexit
+			if i == 10 {
+				//quit <- true // 解除 主go程阻塞。
+				break // return // runtime.Goexit
 			}
 		}
 	}()

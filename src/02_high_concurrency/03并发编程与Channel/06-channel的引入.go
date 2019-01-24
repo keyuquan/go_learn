@@ -8,6 +8,7 @@ import (
 
 // 全局定义channel， 用来完成数据同步
 var channel = make(chan int)
+var channel5 chan int
 
 // 定义一台打印机
 func printer(s string) {
@@ -20,16 +21,15 @@ func printer(s string) {
 // 定义两个人使用打印机
 func person1() { // person 先执行。
 	printer("hello")
-	channel <- 8
+	channel <- 8 // 向
 }
 func person2() { // person 后执行
-	// 		<- channel
+	<-channel
 	printer("wrold")
 }
 
 func main() {
 	go person1()
-	<-channel
 
 	go person2()
 
