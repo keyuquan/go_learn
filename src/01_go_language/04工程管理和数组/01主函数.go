@@ -1,6 +1,6 @@
 package main
 
-import "userinfo"
+import "01_go_language/04工程管理和数组/userinfo"
 
 //全局变量
 var num int = 123

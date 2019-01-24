@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main0701() {
+func main() {
 	arr := [10]int{9, 1, 5, 6, 7, 3, 10, 2, 4, 8}
 
 	//外层控制行
@@ -25,7 +25,7 @@ func main0701() {
 //j 6
 //s 10
 
-func main() {
+func main8() {
 	var ch [20]byte
 
 	for i := 0; i < len(ch); i++ {
