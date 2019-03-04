@@ -9,7 +9,7 @@ import "fmt"
 //%s 占位符 表示输出一个字符串类型数据
 //%c 占位符 表示输出一个字符类型数据
 */
-func main() {
+func main04() {
 	//输出格式 Println  打印数据时自带换行
 	/*
 		fmt.Println("hello")
